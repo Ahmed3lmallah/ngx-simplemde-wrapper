@@ -1,0 +1,31 @@
+{
+  "name": "ngx-simplemde-wrapper",
+  "version": "0.0.1-beta",
+  "description": "A lightweight Angular 8+ wrapper around simpleMDE - Markdown Editor",
+  "keywords": [
+    "angular",
+    "plugin",
+    "markdown",
+    "editor",
+    "simpleMDE"
+  ],
+  "author": "Ahmed ElMallah <ahmed.elmallah@live.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmed3lmallah/ngx-simplemde-wrapper"
+  },
+  "homepage": "https://github.com/Ahmed3lmallah/ngx-simplemde-wrapper",
+  "bugs": {
+    "url": "https://github.com/Ahmed3lmallah/ngx-simplemde-wrapper/issues"
+  },
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^10.0.9",
+    "@angular/core": "^10.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "simplemde": "^1.11.2"
+  }
+}

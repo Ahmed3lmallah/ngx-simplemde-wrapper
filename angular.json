@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-simplemde-wrapper": {
+      "projectType": "library",
+      "root": "projects/ngx-simplemde-wrapper",
+      "sourceRoot": "projects/ngx-simplemde-wrapper/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-simplemde-wrapper/tsconfig.lib.json",
+            "project": "projects/ngx-simplemde-wrapper/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-simplemde-wrapper/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-simplemde-wrapper/src/test.ts",
+            "tsConfig": "projects/ngx-simplemde-wrapper/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-simplemde-wrapper/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-simplemde-wrapper/tsconfig.lib.json",
+              "projects/ngx-simplemde-wrapper/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": false
+  },
+  "defaultProject": "ngx-simplemde-wrapper"
+}

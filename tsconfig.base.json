@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ngx-simple-mde-markdown-editor": [
+        "dist/ngx-simple-mde-markdown-editor/ngx-simple-mde-markdown-editor",
+        "dist/ngx-simple-mde-markdown-editor"
+      ],
+      "angular-simplemde": [
+        "dist/angular-simplemde/angular-simplemde",
+        "dist/angular-simplemde"
+      ],
+      "ngx-simplemde-wrapper": [
+        "dist/ngx-simplemde-wrapper/ngx-simplemde-wrapper",
+        "dist/ngx-simplemde-wrapper"
+      ]
+    }
+  }
+}
