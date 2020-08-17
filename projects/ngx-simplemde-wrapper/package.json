@@ -1,13 +1,16 @@
 {
   "name": "ngx-simplemde-wrapper",
-  "version": "0.0.1-beta",
-  "description": "A lightweight Angular 8+ wrapper around simpleMDE - Markdown Editor",
+  "version": "0.0.2-beta",
+  "description": "A lightweight Angular 10+ wrapper around simpleMDE - Markdown Editor",
   "keywords": [
     "angular",
     "plugin",
     "markdown",
     "editor",
-    "simpleMDE"
+    "simpleMDE",
+    "embeddable",
+    "wysiwyg",
+    "typescript"
   ],
   "author": "Ahmed ElMallah <ahmed.elmallah@live.com>",
   "repository": {
